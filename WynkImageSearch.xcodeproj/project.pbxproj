@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D385CAD6ABF2A04BCBF0C9 /* Pods_WynkImageSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78C2CAE87C8A6814B1012FF /* Pods_WynkImageSearch.framework */; };
+		5D0611A34D2242FF1294D30A /* Pods_WynkImageSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E42A0F90DEADF2E0A9CA2 /* Pods_WynkImageSearchTests.framework */; };
+		84D27C4F24BA316000EF277C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C4E24BA316000EF277C /* AppDelegate.swift */; };
+		84D27C5124BA316000EF277C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C5024BA316000EF277C /* SceneDelegate.swift */; };
+		84D27C5624BA316000EF277C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D27C5424BA316000EF277C /* Main.storyboard */; };
+		84D27C5824BA316100EF277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D27C5724BA316100EF277C /* Assets.xcassets */; };
+		84D27C5B24BA316100EF277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D27C5924BA316100EF277C /* LaunchScreen.storyboard */; };
+		84D27C6624BA316200EF277C /* WynkImageSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C6524BA316200EF277C /* WynkImageSearchTests.swift */; };
+		84D27C7824BA34AF00EF277C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C7724BA34AF00EF277C /* LandingViewController.swift */; };
+		84D27C7C24BA355800EF277C /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C7B24BA355800EF277C /* AppImages.swift */; };
+		84D27C7E24BA36CE00EF277C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C7D24BA36CE00EF277C /* BaseViewController.swift */; };
+		84D27C8024BADC9D00EF277C /* AppStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C7F24BADC9D00EF277C /* AppStoryboards.swift */; };
+		84D27C8224BAE02D00EF277C /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C8124BAE02D00EF277C /* AppFonts.swift */; };
+		84D27C8424BAE33200EF277C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C8324BAE33200EF277C /* AppColors.swift */; };
+		84D27C8724BAE3FE00EF277C /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C8624BAE3FE00EF277C /* Appearance.swift */; };
+		84D27C8924BAE4E100EF277C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D27C8824BAE4E100EF277C /* Localizable.strings */; };
+		84D27C8B24BAE53800EF277C /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C8A24BAE53800EF277C /* LocalizedString.swift */; };
+		84D27C8F24BAE69800EF277C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C8E24BAE69800EF277C /* StringExtension.swift */; };
+		84D27C9124BAF66B00EF277C /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C9024BAF66B00EF277C /* LandingViewModel.swift */; };
+		84D27C9324BAFDE700EF277C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C9224BAFDE700EF277C /* SearchViewController.swift */; };
+		84D27C9524BB2E8100EF277C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C9424BB2E8100EF277C /* SearchViewModel.swift */; };
+		84D27CA024BB652A00EF277C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27C9F24BB652A00EF277C /* ParameterEncoding.swift */; };
+		84D27CA224BB654D00EF277C /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CA124BB654D00EF277C /* URLParameterEncoding.swift */; };
+		84D27CA424BB656B00EF277C /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CA324BB656B00EF277C /* BaseRequest.swift */; };
+		84D27CA624BB658300EF277C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CA524BB658300EF277C /* Router.swift */; };
+		84D27CA824BB659F00EF277C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CA724BB659F00EF277C /* HTTPMethod.swift */; };
+		84D27CAA24BB65B100EF277C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CA924BB65B100EF277C /* HTTPTask.swift */; };
+		84D27CAE24BB666200EF277C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CAD24BB666200EF277C /* NetworkRequest.swift */; };
+		84D27CB024BB668C00EF277C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CAF24BB668C00EF277C /* NetworkManager.swift */; };
+		84D27CB224BB672A00EF277C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CB124BB672A00EF277C /* Image.swift */; };
+		84D27CB724BB743500EF277C /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CB524BB743500EF277C /* ImageTableViewCell.swift */; };
+		84D27CB824BB743500EF277C /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D27CB624BB743500EF277C /* ImageTableViewCell.xib */; };
+		84D27CBA24BB769200EF277C /* SearchViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CB924BB769200EF277C /* SearchViewController+TableView.swift */; };
+		84D27CBC24BB772300EF277C /* UiTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CBB24BB772300EF277C /* UiTableViewExtension.swift */; };
+		84D27CBE24BB783000EF277C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CBD24BB783000EF277C /* UIImageViewExtension.swift */; };
+		84D27CC024BB856300EF277C /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CBF24BB856300EF277C /* FullScreenImageViewController.swift */; };
+		84D27CC224BB898800EF277C /* RecentSearches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CC124BB898800EF277C /* RecentSearches.swift */; };
+		84D27CC424BB8EF600EF277C /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27CC324BB8EF600EF277C /* AppUserDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D27C6224BA316200EF277C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D27C4324BA316000EF277C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D27C4A24BA316000EF277C;
+			remoteInfo = WynkImageSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0070D27F898E19C9A3AD1B13 /* Pods-WynkImageSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WynkImageSearch.release.xcconfig"; path = "Target Support Files/Pods-WynkImageSearch/Pods-WynkImageSearch.release.xcconfig"; sourceTree = "<group>"; };
+		84D27C4B24BA316000EF277C /* WynkImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WynkImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D27C4E24BA316000EF277C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84D27C5024BA316000EF277C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84D27C5524BA316000EF277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D27C5724BA316100EF277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D27C5A24BA316100EF277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D27C5C24BA316100EF277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D27C6124BA316200EF277C /* WynkImageSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WynkImageSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D27C6524BA316200EF277C /* WynkImageSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WynkImageSearchTests.swift; sourceTree = "<group>"; };
+		84D27C6724BA316200EF277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D27C7724BA34AF00EF277C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		84D27C7B24BA355800EF277C /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		84D27C7D24BA36CE00EF277C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84D27C7F24BADC9D00EF277C /* AppStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboards.swift; sourceTree = "<group>"; };
+		84D27C8124BAE02D00EF277C /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		84D27C8324BAE33200EF277C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		84D27C8624BAE3FE00EF277C /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		84D27C8824BAE4E100EF277C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		84D27C8A24BAE53800EF277C /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		84D27C8E24BAE69800EF277C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		84D27C9024BAF66B00EF277C /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		84D27C9224BAFDE700EF277C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		84D27C9424BB2E8100EF277C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		84D27C9F24BB652A00EF277C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		84D27CA124BB654D00EF277C /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		84D27CA324BB656B00EF277C /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		84D27CA524BB658300EF277C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		84D27CA724BB659F00EF277C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		84D27CA924BB65B100EF277C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		84D27CAD24BB666200EF277C /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		84D27CAF24BB668C00EF277C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		84D27CB124BB672A00EF277C /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		84D27CB524BB743500EF277C /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		84D27CB624BB743500EF277C /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		84D27CB924BB769200EF277C /* SearchViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+TableView.swift"; sourceTree = "<group>"; };
+		84D27CBB24BB772300EF277C /* UiTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTableViewExtension.swift; sourceTree = "<group>"; };
+		84D27CBD24BB783000EF277C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		84D27CBF24BB856300EF277C /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		84D27CC124BB898800EF277C /* RecentSearches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearches.swift; sourceTree = "<group>"; };
+		84D27CC324BB8EF600EF277C /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		B12E42A0F90DEADF2E0A9CA2 /* Pods_WynkImageSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WynkImageSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB234CCC0FADBA2F3ED32672 /* Pods-WynkImageSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WynkImageSearch.debug.xcconfig"; path = "Target Support Files/Pods-WynkImageSearch/Pods-WynkImageSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		F5C056F01A402BE4D6094EF8 /* Pods-WynkImageSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WynkImageSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-WynkImageSearchTests/Pods-WynkImageSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F78C2CAE87C8A6814B1012FF /* Pods_WynkImageSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WynkImageSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CFAE4AB9B06E7CA682A6CD /* Pods-WynkImageSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WynkImageSearchTests.release.xcconfig"; path = "Target Support Files/Pods-WynkImageSearchTests/Pods-WynkImageSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D27C4824BA316000EF277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D385CAD6ABF2A04BCBF0C9 /* Pods_WynkImageSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D27C5E24BA316200EF277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0611A34D2242FF1294D30A /* Pods_WynkImageSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84D27C4224BA316000EF277C = {
+			isa = PBXGroup;
+			children = (
+				84D27C4D24BA316000EF277C /* WynkImageSearch */,
+				84D27C6424BA316200EF277C /* WynkImageSearchTests */,
+				84D27C4C24BA316000EF277C /* Products */,
+				8B87EDB1E905A38F13A820C7 /* Pods */,
+				D11B8DF83A5AFE23FFCE841B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84D27C4C24BA316000EF277C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C4B24BA316000EF277C /* WynkImageSearch.app */,
+				84D27C6124BA316200EF277C /* WynkImageSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D27C4D24BA316000EF277C /* WynkImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C9624BB40CB00EF277C /* Networking */,
+				84D27C8524BAE3EE00EF277C /* Protocols */,
+				84D27C7924BA353700EF277C /* Utilities */,
+				84D27C5C24BA316100EF277C /* Info.plist */,
+				84D27C7624BA342E00EF277C /* AppMains */,
+				84D27C7324BA33DE00EF277C /* View */,
+				84D27C7224BA33D300EF277C /* ViewModel */,
+				84D27C7124BA33C800EF277C /* ViewController */,
+				84D27C7024BA33BE00EF277C /* DataModel */,
+			);
+			path = WynkImageSearch;
+			sourceTree = "<group>";
+		};
+		84D27C6424BA316200EF277C /* WynkImageSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C6524BA316200EF277C /* WynkImageSearchTests.swift */,
+				84D27C6724BA316200EF277C /* Info.plist */,
+			);
+			path = WynkImageSearchTests;
+			sourceTree = "<group>";
+		};
+		84D27C7024BA33BE00EF277C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				84D27CB124BB672A00EF277C /* Image.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		84D27C7124BA33C800EF277C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C7724BA34AF00EF277C /* LandingViewController.swift */,
+				84D27C7D24BA36CE00EF277C /* BaseViewController.swift */,
+				84D27C9224BAFDE700EF277C /* SearchViewController.swift */,
+				84D27CB924BB769200EF277C /* SearchViewController+TableView.swift */,
+				84D27CBF24BB856300EF277C /* FullScreenImageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84D27C7224BA33D300EF277C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C9024BAF66B00EF277C /* LandingViewModel.swift */,
+				84D27C9424BB2E8100EF277C /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84D27C7324BA33DE00EF277C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C7524BA33FE00EF277C /* XIBs */,
+				84D27C7424BA33F300EF277C /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D27C7424BA33F300EF277C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C5424BA316000EF277C /* Main.storyboard */,
+				84D27C5924BA316100EF277C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84D27C7524BA33FE00EF277C /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				84D27CB524BB743500EF277C /* ImageTableViewCell.swift */,
+				84D27CB624BB743500EF277C /* ImageTableViewCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		84D27C7624BA342E00EF277C /* AppMains */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C8C24BAE53F00EF277C /* Strings */,
+				84D27C4E24BA316000EF277C /* AppDelegate.swift */,
+				84D27C5024BA316000EF277C /* SceneDelegate.swift */,
+				84D27C5724BA316100EF277C /* Assets.xcassets */,
+			);
+			path = AppMains;
+			sourceTree = "<group>";
+		};
+		84D27C7924BA353700EF277C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C8D24BAE68600EF277C /* Extensions */,
+				84D27C7B24BA355800EF277C /* AppImages.swift */,
+				84D27C7F24BADC9D00EF277C /* AppStoryboards.swift */,
+				84D27C8124BAE02D00EF277C /* AppFonts.swift */,
+				84D27C8324BAE33200EF277C /* AppColors.swift */,
+				84D27CC124BB898800EF277C /* RecentSearches.swift */,
+				84D27CC324BB8EF600EF277C /* AppUserDefaults.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84D27C8524BAE3EE00EF277C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C8624BAE3FE00EF277C /* Appearance.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84D27C8C24BAE53F00EF277C /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C8A24BAE53800EF277C /* LocalizedString.swift */,
+				84D27C8824BAE4E100EF277C /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		84D27C8D24BAE68600EF277C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C8E24BAE69800EF277C /* StringExtension.swift */,
+				84D27CBB24BB772300EF277C /* UiTableViewExtension.swift */,
+				84D27CBD24BB783000EF277C /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84D27C9624BB40CB00EF277C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C9C24BB64CB00EF277C /* Encoding */,
+				84D27C9B24BB64C500EF277C /* Service */,
+				84D27C9A24BB64BB00EF277C /* Manager */,
+				84D27C9924BB64B400EF277C /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84D27C9924BB64B400EF277C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				84D27CAD24BB666200EF277C /* NetworkRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		84D27C9A24BB64BB00EF277C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				84D27CAF24BB668C00EF277C /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		84D27C9B24BB64C500EF277C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84D27CA324BB656B00EF277C /* BaseRequest.swift */,
+				84D27CA524BB658300EF277C /* Router.swift */,
+				84D27CA724BB659F00EF277C /* HTTPMethod.swift */,
+				84D27CA924BB65B100EF277C /* HTTPTask.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84D27C9C24BB64CB00EF277C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				84D27C9F24BB652A00EF277C /* ParameterEncoding.swift */,
+				84D27CA124BB654D00EF277C /* URLParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		8B87EDB1E905A38F13A820C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB234CCC0FADBA2F3ED32672 /* Pods-WynkImageSearch.debug.xcconfig */,
+				0070D27F898E19C9A3AD1B13 /* Pods-WynkImageSearch.release.xcconfig */,
+				F5C056F01A402BE4D6094EF8 /* Pods-WynkImageSearchTests.debug.xcconfig */,
+				F7CFAE4AB9B06E7CA682A6CD /* Pods-WynkImageSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D11B8DF83A5AFE23FFCE841B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78C2CAE87C8A6814B1012FF /* Pods_WynkImageSearch.framework */,
+				B12E42A0F90DEADF2E0A9CA2 /* Pods_WynkImageSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D27C4A24BA316000EF277C /* WynkImageSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D27C6A24BA316200EF277C /* Build configuration list for PBXNativeTarget "WynkImageSearch" */;
+			buildPhases = (
+				32DD60127C4137CBEC4AAB97 /* [CP] Check Pods Manifest.lock */,
+				84D27C4724BA316000EF277C /* Sources */,
+				84D27C4824BA316000EF277C /* Frameworks */,
+				84D27C4924BA316000EF277C /* Resources */,
+				C0C875FE3E0527105AFE4A05 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WynkImageSearch;
+			productName = WynkImageSearch;
+			productReference = 84D27C4B24BA316000EF277C /* WynkImageSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84D27C6024BA316200EF277C /* WynkImageSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D27C6D24BA316200EF277C /* Build configuration list for PBXNativeTarget "WynkImageSearchTests" */;
+			buildPhases = (
+				04AB7F60801F1555F0A60EAC /* [CP] Check Pods Manifest.lock */,
+				84D27C5D24BA316200EF277C /* Sources */,
+				84D27C5E24BA316200EF277C /* Frameworks */,
+				84D27C5F24BA316200EF277C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D27C6324BA316200EF277C /* PBXTargetDependency */,
+			);
+			name = WynkImageSearchTests;
+			productName = WynkImageSearchTests;
+			productReference = 84D27C6124BA316200EF277C /* WynkImageSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D27C4324BA316000EF277C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = personal;
+				TargetAttributes = {
+					84D27C4A24BA316000EF277C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					84D27C6024BA316200EF277C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 84D27C4A24BA316000EF277C;
+					};
+				};
+			};
+			buildConfigurationList = 84D27C4624BA316000EF277C /* Build configuration list for PBXProject "WynkImageSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D27C4224BA316000EF277C;
+			productRefGroup = 84D27C4C24BA316000EF277C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D27C4A24BA316000EF277C /* WynkImageSearch */,
+				84D27C6024BA316200EF277C /* WynkImageSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D27C4924BA316000EF277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D27CB824BB743500EF277C /* ImageTableViewCell.xib in Resources */,
+				84D27C5B24BA316100EF277C /* LaunchScreen.storyboard in Resources */,
+				84D27C8924BAE4E100EF277C /* Localizable.strings in Resources */,
+				84D27C5824BA316100EF277C /* Assets.xcassets in Resources */,
+				84D27C5624BA316000EF277C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D27C5F24BA316200EF277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04AB7F60801F1555F0A60EAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WynkImageSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32DD60127C4137CBEC4AAB97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WynkImageSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0C875FE3E0527105AFE4A05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WynkImageSearch/Pods-WynkImageSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WynkImageSearch/Pods-WynkImageSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WynkImageSearch/Pods-WynkImageSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D27C4724BA316000EF277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D27CA824BB659F00EF277C /* HTTPMethod.swift in Sources */,
+				84D27CA224BB654D00EF277C /* URLParameterEncoding.swift in Sources */,
+				84D27C8B24BAE53800EF277C /* LocalizedString.swift in Sources */,
+				84D27CA424BB656B00EF277C /* BaseRequest.swift in Sources */,
+				84D27CBA24BB769200EF277C /* SearchViewController+TableView.swift in Sources */,
+				84D27CBE24BB783000EF277C /* UIImageViewExtension.swift in Sources */,
+				84D27CB024BB668C00EF277C /* NetworkManager.swift in Sources */,
+				84D27CC224BB898800EF277C /* RecentSearches.swift in Sources */,
+				84D27C7E24BA36CE00EF277C /* BaseViewController.swift in Sources */,
+				84D27CB224BB672A00EF277C /* Image.swift in Sources */,
+				84D27CA624BB658300EF277C /* Router.swift in Sources */,
+				84D27C8724BAE3FE00EF277C /* Appearance.swift in Sources */,
+				84D27CC024BB856300EF277C /* FullScreenImageViewController.swift in Sources */,
+				84D27CB724BB743500EF277C /* ImageTableViewCell.swift in Sources */,
+				84D27CBC24BB772300EF277C /* UiTableViewExtension.swift in Sources */,
+				84D27CAE24BB666200EF277C /* NetworkRequest.swift in Sources */,
+				84D27C4F24BA316000EF277C /* AppDelegate.swift in Sources */,
+				84D27C8224BAE02D00EF277C /* AppFonts.swift in Sources */,
+				84D27C8024BADC9D00EF277C /* AppStoryboards.swift in Sources */,
+				84D27C7C24BA355800EF277C /* AppImages.swift in Sources */,
+				84D27C9524BB2E8100EF277C /* SearchViewModel.swift in Sources */,
+				84D27C8424BAE33200EF277C /* AppColors.swift in Sources */,
+				84D27C9324BAFDE700EF277C /* SearchViewController.swift in Sources */,
+				84D27C7824BA34AF00EF277C /* LandingViewController.swift in Sources */,
+				84D27C8F24BAE69800EF277C /* StringExtension.swift in Sources */,
+				84D27CAA24BB65B100EF277C /* HTTPTask.swift in Sources */,
+				84D27CA024BB652A00EF277C /* ParameterEncoding.swift in Sources */,
+				84D27C9124BAF66B00EF277C /* LandingViewModel.swift in Sources */,
+				84D27CC424BB8EF600EF277C /* AppUserDefaults.swift in Sources */,
+				84D27C5124BA316000EF277C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D27C5D24BA316200EF277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D27C6624BA316200EF277C /* WynkImageSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D27C6324BA316200EF277C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D27C4A24BA316000EF277C /* WynkImageSearch */;
+			targetProxy = 84D27C6224BA316200EF277C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84D27C5424BA316000EF277C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D27C5524BA316000EF277C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84D27C5924BA316100EF277C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D27C5A24BA316100EF277C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D27C6824BA316200EF277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84D27C6924BA316200EF277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D27C6B24BA316200EF277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB234CCC0FADBA2F3ED32672 /* Pods-WynkImageSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WynkImageSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.WynkImageSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84D27C6C24BA316200EF277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0070D27F898E19C9A3AD1B13 /* Pods-WynkImageSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WynkImageSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.WynkImageSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84D27C6E24BA316200EF277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C056F01A402BE4D6094EF8 /* Pods-WynkImageSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WynkImageSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.WynkImageSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WynkImageSearch.app/WynkImageSearch";
+			};
+			name = Debug;
+		};
+		84D27C6F24BA316200EF277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CFAE4AB9B06E7CA682A6CD /* Pods-WynkImageSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WynkImageSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.WynkImageSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WynkImageSearch.app/WynkImageSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D27C4624BA316000EF277C /* Build configuration list for PBXProject "WynkImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D27C6824BA316200EF277C /* Debug */,
+				84D27C6924BA316200EF277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D27C6A24BA316200EF277C /* Build configuration list for PBXNativeTarget "WynkImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D27C6B24BA316200EF277C /* Debug */,
+				84D27C6C24BA316200EF277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D27C6D24BA316200EF277C /* Build configuration list for PBXNativeTarget "WynkImageSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D27C6E24BA316200EF277C /* Debug */,
+				84D27C6F24BA316200EF277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84D27C4324BA316000EF277C /* Project object */;
+}

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  WynkImageSearch
+
+  Created by Aashima Anand on 12/07/20.
+  Copyright © 2020 personal. All rights reserved.
+*/
+
+"continue" = "Continue";
+"search" = "Search";
+"searchTextCannotBeEmpty" = "Search text cannot be empty.";
+"greaterThan100" = "Search text cannot be greater than max characters.";
+"oops" = "Oops!!";
+"ok" = "Ok";
+"couldNotFindAnything" = "Could not find anything";
+"fullScreen" = "Full Screen";
