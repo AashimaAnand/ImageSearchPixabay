@@ -69,6 +69,7 @@ final class SearchViewModel {
             searchFor(text: searchText)
             return true
         } else { return false }
+        
     }
     
 }
