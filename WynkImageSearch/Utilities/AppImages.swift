@@ -11,8 +11,8 @@ import UIKit
 enum AppImages: String {
     case landingBg = "LandingBg"
     case imgPlaceholder = "ImagePlaceholder"
-   
-    
+    case forwardArrow = "ForwardArrow"
+    case backwardArrow = "BackwardArrow"
     var image: UIImage {
         return UIImage(named: self.rawValue) ?? UIImage()
     }

@@ -32,9 +32,8 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let imgModel = viewModel.cellViewModelForIndexPath(indexPath)
         let controller = FullScreenImageViewController.instantiate(fromAppStoryboard: .Main)
-        controller.viewModel = FullScreenImageViewModel(url: imgModel.image.largeImageURL)
+        controller.viewModel = FullScreenImageViewModel(images: viewModel.allImages(), index: indexPath.row)
         push(vc: controller)
     }
 }

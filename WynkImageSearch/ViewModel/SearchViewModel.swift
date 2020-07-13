@@ -71,7 +71,9 @@ final class SearchViewModel {
         } else { return false }
         
     }
-    
+    func allImages() -> [Image] {
+        return images
+    }
 }
 
 // MARK: EXTENSIONS
